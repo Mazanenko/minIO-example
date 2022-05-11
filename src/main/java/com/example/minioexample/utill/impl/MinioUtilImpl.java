@@ -72,6 +72,7 @@ public class MinioUtilImpl implements MinioUtil {
         }
     }
 
+    @Override
     public Object readObject(String bucketName, String objectName) {
         if (!isBucketExist(bucketName)) {
             throw new IllegalArgumentException("Given invalid bucket");
